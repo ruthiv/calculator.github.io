@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./index.css">
+    <script src="./index.js">defer</script>
+    <title>calculator</title>
+</head>
+<body>
+    <table class="calculator" cellpadding=4>
+    <tr><td colspan=4><input class="calculator"  type="text" placeholder="0" id="screen"></td></tr>
+    <tr>
+        <td class="gray"><input class="calculator" type="button" value="AC" onclick="reset()"></td>
+        <td class="gray"><input class="calculator" type="button" value="+/-" onclick="positiveOrNegativeNumber(this.value)"></td>
+        <td class="gray"><input class="calculator" type="button" value="%" onclick="oneAction(this.value), percent()"></td>
+        <td class="oranges"><input class="calculator" type="button" value="÷"  onclick="oneAction('/')" ></td>
+    </tr>
+    <tr>
+        <td ><input class="calculator" type="button" value="7" onclick="pressingButton(this.value)"></td>
+        <td ><input class="calculator" type="button" value="8" onclick="pressingButton(this.value)"></td>
+        <td ><input class="calculator" type="button" value="9" onclick="pressingButton(this.value)"></td>
+        <td class="oranges"><input class="calculator" type="button" value="&times" onclick="oneAction('*')"></td>
+    </tr>
+    <tr>
+        <td><input class="calculator" type="button" value="4" onclick="pressingButton(this.value)"></td>
+        <td><input class="calculator" type="button" value="5" onclick="pressingButton(this.value)"></td>
+        <td><input class="calculator" type="button" value="6" onclick="pressingButton(this.value)"></td>
+        <td class="oranges"><input class="calculator" type="button" value="-" onclick="oneAction(this.value)"></td>
+    </tr>
+    <tr>
+        <td><input class="calculator" type="button" value="1" onclick="pressingButton(this.value)"></td>
+        <td><input class="calculator" type="button" value="2" onclick="pressingButton(this.value)"></td>
+        <td><input class="calculator" type="button" value="3" onclick="pressingButton(this.value)"></td>
+        <td class="oranges"><input class="calculator" type="button" value="+" onclick="oneAction(this.value)"></td>
+    </tr>
+    <tr>
+        <td colspan=2><input class="calculator clear" type="button" value="0" onclick="noAction(this.value)"></td>
+        <td><input class="calculator" type="button" value="." onclick="zero(this.value)"></td>
+        <td class="oranges"><input class="calculator" type="button"  value="=" onclick="calculate(document.getElementById('screen').value)"></td>
+    </tr>
+</table>
+</body>
+</html>

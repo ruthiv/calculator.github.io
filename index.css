@@ -1,0 +1,80 @@
+        table.calculator{
+    background:rgb(10, 10, 10);
+     font-size: x-large;
+     color: rgb(249, 245, 245);
+     width: 300px;
+     height: 550px;
+     text-align: center; 
+     border-radius: 30px;
+     padding: 5px;
+        }
+            input[type=button]:hover{
+            background-color: #5e6161;
+        }
+
+        input[type=button]:active{
+             box-shadow: 0 5px #666;
+            transform: translateY(1px);  
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+           outline: none; 
+        }
+
+input.calculator {
+     width: 100%;
+   margin-top: 0%;
+  background-color: #2d2e2e;
+  border-radius: 150px;
+  font-style: italic;
+  font-size: medium;
+  border: none;
+  color: white;
+         
+}  
+       
+ td.oranges input.calculator{
+            background-color: rgb(226, 68, 68);
+            font-size: 2rem;
+           inline-size: 60px;
+           block-size: 60px;
+           text-align:center
+        }
+ td.oranges input.calculator:hover {
+            background-color:rgb(240, 141, 141);
+        }
+        td.gray input.calculator:hover{
+            background-color: rgb(189, 191, 94);
+        }
+         td.gray input.calculator{
+            /* display:ruby-base-container; */
+            background-color: rgb(195, 198, 32);
+            color: black;
+            display: block;
+            font-size: 1.5rem;
+        }
+
+        input[type=button] {
+          border: none;
+           font-size: 2rem;
+           inline-size: 60px;
+           block-size: 60px;
+          border-radius: 40px;
+        }
+           
+        input[type=text] {
+            text-align:right;
+            margin-top:15%; 
+            margin-bottom: 0%;
+            background: rgb(10, 10, 10);
+            color:rgb(245, 240, 240) ;
+            font-size: 3.5rem;
+            padding-block-start: 2rem;
+            padding: 10px 0px;
+            border-radius: 0px;
+        }
+
+        .calculator .clear{
+         grid-column: span 2;
+        width: 100%;
+        text-align:left;
+        padding: 10px 20px;
+         }
